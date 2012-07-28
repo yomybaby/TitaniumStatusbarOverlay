@@ -28,9 +28,9 @@
 		24DE9E1211C5FE74003F90F6 /* MattappStatusbarModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* MattappStatusbarModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* MattappStatusbar_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* MattappStatusbar_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		C90D4C2115C356CA004F8A2B /* MTStatusBarOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C90D4C1F15C356CA004F8A2B /* MTStatusBarOverlay.h */; };
-		C90D4C2215C356CA004F8A2B /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C90D4C2015C356CA004F8A2B /* MTStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		C90D4C2515C3596F004F8A2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90D4C2415C3596F004F8A2B /* UIKit.framework */; };
+		C98C52A515C42DB20029F26D /* MTStatusBarOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C98C52A315C42DB20029F26D /* MTStatusBarOverlay.h */; };
+		C98C52A615C42DB20029F26D /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = C98C52A415C42DB20029F26D /* MTStatusBarOverlay.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +51,9 @@
 		24DE9E1011C5FE74003F90F6 /* MattappStatusbarModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MattappStatusbarModuleAssets.m; path = Classes/MattappStatusbarModuleAssets.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* MattappStatusbar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MattappStatusbar_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C90D4C1F15C356CA004F8A2B /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = Classes/MTStatusBarOverlay.h; sourceTree = "<group>"; };
-		C90D4C2015C356CA004F8A2B /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = Classes/MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		C90D4C2415C3596F004F8A2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C98C52A315C42DB20029F26D /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTStatusBarOverlay.h; path = MTStatusBarOverlay/MTStatusBarOverlay.h; sourceTree = "<group>"; };
+		C98C52A415C42DB20029F26D /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTStatusBarOverlay.m; path = MTStatusBarOverlay/MTStatusBarOverlay.m; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libMattappStatusbar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMattappStatusbar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,8 +101,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C90D4C1F15C356CA004F8A2B /* MTStatusBarOverlay.h */,
-				C90D4C2015C356CA004F8A2B /* MTStatusBarOverlay.m */,
+				C98C52A315C42DB20029F26D /* MTStatusBarOverlay.h */,
+				C98C52A415C42DB20029F26D /* MTStatusBarOverlay.m */,
 				24DE9E0F11C5FE74003F90F6 /* MattappStatusbarModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* MattappStatusbarModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* MattappStatusbarModule.h */,
@@ -130,7 +130,7 @@
 				AA747D9F0F9514B9006C5449 /* MattappStatusbar_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* MattappStatusbarModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* MattappStatusbarModuleAssets.h in Headers */,
-				C90D4C2115C356CA004F8A2B /* MTStatusBarOverlay.h in Headers */,
+				C98C52A515C42DB20029F26D /* MTStatusBarOverlay.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* MattappStatusbarModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* MattappStatusbarModuleAssets.m in Sources */,
-				C90D4C2215C356CA004F8A2B /* MTStatusBarOverlay.m in Sources */,
+				C98C52A615C42DB20029F26D /* MTStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
