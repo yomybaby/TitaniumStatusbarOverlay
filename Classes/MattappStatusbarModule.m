@@ -169,7 +169,7 @@
 {
     if (![NSThread isMainThread]) {
 		__block id result = nil;
-		TiThreadPerformOnMainThread(^{[self hide:arg];}, YES);
+		TiThreadPerformOnMainThread(^{[self stop:arg];}, YES);
 	}
     
     [overlay hide];
@@ -179,7 +179,7 @@
 {
     if (![NSThread isMainThread]) {
 		__block id result = nil;
-		TiThreadPerformOnMainThread(^{[self hide:arg];}, YES);
+		TiThreadPerformOnMainThread(^{[self show:arg];}, YES);
 	}
     
     [overlay show];
